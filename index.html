@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var favoriteMovies = ["big lebowski", "dark knight", "inception", "super troopers", "harry potter"];
+
+        var userMovie = prompt("What is your favorite move?");
+        var userMovieLower = userMovie.toLowerCase();
+
+        var favoriteTravel = ["portugal", "budapest", "vienna", "chile", "venice", "munich", "poland"];
+
+        var userTravel;
+        var userTravelLower;
+
+        if (favoriteMovies.indexOf(userMovieLower) === -1) {
+            alert("Never seen it...");
+        }
+        else {
+            alert("YEAH I LOVE THAT MOVIE!!!");
+        }
+
+        userTravel = prompt("Where is your favorite place you have traveled to?");
+        userTravelLower = userTravel.toLowerCase();
+
+        if (favoriteTravel.indexOf(userTravelLower) === -1) {
+            alert("Never been there...");
+        }
+        else {
+            alert("That's one of my favorite places!!!");
+        }
+
+    </script>
+    
+</body>
+</html>
