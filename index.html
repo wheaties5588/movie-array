@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Faovrite Movies & Places of Travel</title>
 </head>
 <body>
 
     <script>
+        //My array of favorite movies
         var favoriteMovies = ["big lebowski", "dark knight", "inception", "super troopers", "harry potter"];
 
-        var userMovie = prompt("What is your favorite move?");
-        var userMovieLower = userMovie.toLowerCase();
+        // Variable to prompt user for favorite movie and converting response to lowercase
+        var userMovie = prompt("What is your favorite move?").toLowerCase();
 
+        //Array of my favorite places to travel
         var favoriteTravel = ["portugal", "budapest", "vienna", "chile", "venice", "munich", "poland"];
 
+        //Initializing variable for prompting user for their favorite place of travel
         var userTravel;
-        var userTravelLower;
 
-        if (favoriteMovies.indexOf(userMovieLower) === -1) {
+        //If/else statement to check if user input favorite movie matches one in my array or not
+        if (favoriteMovies.indexOf(userMovie) === -1) {
             alert("Never seen it...");
         }
         else {
             alert("YEAH I LOVE THAT MOVIE!!!");
         }
 
-        userTravel = prompt("Where is your favorite place you have traveled to?");
-        userTravelLower = userTravel.toLowerCase();
+        // Setting variable to prompt user for their favorite place of travel and converting it to lowercase
+        userTravel = prompt("Where is your favorite place you have traveled to?").toLowerCase();
 
-        if (favoriteTravel.indexOf(userTravelLower) === -1) {
+        //If/else statement to check if user input favorite place of travel matches one in my array or not
+        if (favoriteTravel.indexOf(userTravel) === -1) {
             alert("Never been there...");
         }
         else {
